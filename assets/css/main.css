@@ -1419,6 +1419,548 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+
+/* =========================================================
+   PAGE ACCUEIL - CAROLINE ATTIGNON
+========================================================= */
+
+
+/* ================= HEADER ================= */
+
+.header {
+  padding: 18px 4%;
+  background: rgba(255, 255, 255, 0.97) !important;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+}
+
+.header .sitename {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+.header .sitename span {
+  color: #2db8b0;
+}
+
+.navmenu a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+  transition: 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu a.active {
+  color: #2db8b0 !important;
+}
+
+
+/* ================= BOUTON HEADER ================= */
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 23px;
+
+  background: #2db8b0;
+  color: white !important;
+
+  border-radius: 30px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.header-contact:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 0;
+
+  overflow: hidden;
+}
+
+
+/* Image */
+
+.hero > img {
+  position: absolute !important;
+
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+
+  object-position: center;
+
+  z-index: 0;
+
+  filter: brightness(0.75);
+
+  transform: scale(1.02);
+}
+
+
+/* Overlay */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.86) 0%,
+      rgba(0, 0, 0, 0.70) 38%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+}
+
+
+/* Container */
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content {
+  max-width: 700px;
+}
+
+
+/* Catégorie */
+
+.hero-category {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  padding: 8px 15px;
+
+  border-left: 3px solid #2db8b0;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.7px;
+}
+
+
+/* Nom */
+
+.hero h2 {
+  margin: 0;
+
+  color: white !important;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: clamp(50px, 6vw, 78px) !important;
+
+  font-weight: 500 !important;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.hero h2 span {
+  display: block;
+
+  color: #2db8b0;
+}
+
+
+/* Ligne */
+
+.hero-line {
+  width: 70px;
+  height: 2px;
+
+  margin: 28px 0;
+
+  background: #2db8b0;
+}
+
+
+/* Description */
+
+.hero-content p {
+  max-width: 650px;
+
+  margin: 0 0 10px;
+
+  color: rgba(255, 255, 255, 0.91);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.8;
+}
+
+.hero-content p strong {
+  color: white;
+  font-weight: 600;
+}
+
+
+/* ================= BOUTONS ================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 32px;
+
+  margin-bottom: 45px;
+}
+
+
+/* Bouton principal */
+
+.btn-primary-custom {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 25px;
+
+  background: #2db8b0;
+
+  color: white !important;
+
+  border-radius: 6px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background: white;
+
+  color: #222 !important;
+
+  transform: translateY(-3px);
+}
+
+
+/* Bouton secondaire */
+
+.btn-secondary-custom {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  color: white !important;
+
+  border-radius: 6px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.btn-secondary-custom:hover {
+  background: white;
+
+  color: #222 !important;
+
+  transform: translateY(-3px);
+}
+
+
+/* ================= STATISTIQUES ================= */
+
+.hero-stats {
+  display: flex;
+
+  gap: 0;
+
+  align-items: center;
+}
+
+.hero-stat {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding-right: 35px;
+
+  margin-right: 35px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.hero-stat:last-child {
+  border-right: none;
+
+  margin-right: 0;
+
+  padding-right: 0;
+}
+
+.hero-stat i {
+  color: #2db8b0;
+
+  font-size: 28px;
+}
+
+.hero-stat strong {
+  display: block;
+
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+.hero-stat small {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  padding: 25px 20px;
+
+  background: white !important;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.footer .social-links a {
+  width: 40px;
+  height: 40px;
+
+  margin: 0 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f4f6f6;
+
+  color: #333;
+
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: #2db8b0;
+
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+.footer .copyright {
+  margin-top: 15px;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.footer .sitename {
+  font-size: 13px;
+
+  color: #333;
+}
+
+
+/* ================= TABLETTE ================= */
+
+@media (max-width: 1200px) {
+
+  .header-contact {
+    display: none !important;
+  }
+
+  .hero-content {
+    max-width: 650px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header .sitename {
+    font-size: 19px;
+  }
+
+  .hero {
+    min-height: calc(100vh - 70px);
+
+    padding: 70px 20px;
+  }
+
+  .hero > img {
+    object-position: 60% center;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.88),
+        rgba(0, 0, 0, 0.60)
+      );
+  }
+
+  .hero-category {
+    font-size: 9px;
+
+    letter-spacing: 1px;
+  }
+
+  .hero h2 {
+    font-size: 45px !important;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 35px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+
+  .hero-stat {
+    padding-right: 20px;
+
+    margin-right: 0;
+  }
+
+}
+
+
+/* ================= PETIT MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 38px !important;
+  }
+
+  .hero-category {
+    font-size: 8px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .hero-stat strong {
+    font-size: 17px;
+  }
+
+  .hero-stat small {
+    font-size: 9px;
+  }
+
 }
