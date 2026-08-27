@@ -53,7 +53,7 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json'}
     })
     .then(response => {
       if( response.ok ) {
@@ -64,7 +64,7 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim() == 'OK' || isJsonSuccess(data)) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
@@ -74,6 +74,15 @@
     .catch((error) => {
       displayError(thisForm, error);
     });
+  }
+
+  // Formspree renvoie du JSON ({"ok":true}) là où le backend PHP renvoyait le texte "OK".
+  function isJsonSuccess(data) {
+    try {
+      return JSON.parse(data).ok === true;
+    } catch (e) {
+      return false;
+    }
   }
 
   function displayError(thisForm, error) {
