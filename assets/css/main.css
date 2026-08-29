@@ -1964,3 +1964,726 @@ section,
   }
 
 }
+/* =====================================================
+   NOUVEAU DESIGN - PAGE RESUME
+   ===================================================== */
+
+.resume-header {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.resume-label {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  background: rgba(39, 174, 96, 0.10);
+  color: #27ae60;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.resume-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.resume-header p {
+  color: #666;
+  line-height: 1.9;
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+
+/* GRILLE */
+
+.resume-grid {
+  align-items: flex-start;
+  row-gap: 30px;
+}
+
+
+/* CARTES */
+
+.resume-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* TITRES DES CARTES */
+
+.resume-card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.resume-card-title i {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(39, 174, 96, 0.10);
+  color: #27ae60;
+
+  font-size: 20px;
+}
+
+.resume-card-title h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/* LISTE DES COMPETENCES */
+
+.resume-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-list li {
+  display: flex;
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-list li i {
+  color: #27ae60;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+
+/* EXPERIENCES */
+
+.experience-item {
+  position: relative;
+
+  padding-left: 25px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  border-left: 2px solid #e8e8e8;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* PETIT POINT SUR LA TIMELINE */
+
+.experience-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: -7px;
+  top: 0;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #27ae60;
+
+  box-shadow: 0 0 0 5px rgba(39, 174, 96, 0.10);
+}
+
+
+/* DATE */
+
+.experience-date {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  margin-bottom: 10px;
+
+  border-radius: 20px;
+
+  background: #f5f5f5;
+
+  color: #777;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* POSTE */
+
+.experience-item h4 {
+  margin: 5px 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* ENTREPRISE */
+
+.experience-item h5 {
+  margin-bottom: 15px;
+
+  color: #27ae60;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+
+/* LISTE EXPERIENCE */
+
+.experience-item ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.experience-item li {
+  margin-bottom: 9px;
+
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVE TELEPHONE */
+
+@media (max-width: 991px) {
+
+  .resume-header {
+    margin-bottom: 40px;
+  }
+
+  .resume-header h2 {
+    font-size: 34px;
+  }
+
+  .resume-card {
+    padding: 22px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .resume-header h2 {
+    font-size: 29px;
+  }
+
+  .resume-header p {
+    font-size: 14px;
+  }
+
+  .resume-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .resume-card-title h3 {
+    font-size: 19px;
+  }
+
+  .experience-item {
+    padding-left: 18px;
+  }
+
+}
+
+/* =========================================================
+   GALERIE
+   ========================================================= */
+
+.gallery-section {
+  padding: 70px 0;
+}
+
+.gallery-section .section-title {
+  margin-bottom: 40px;
+}
+
+.gallery-section .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.gallery-section .section-title p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+
+/* Carte image */
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Image */
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+
+/* Effet au passage de la souris */
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+
+/* Overlay */
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+
+/* Affichage overlay */
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+
+/* Icône */
+
+.gallery-overlay i {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+/* Texte */
+
+.gallery-overlay h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* Responsive téléphone */
+
+@media (max-width: 768px) {
+
+  .gallery-section {
+    padding: 50px 15px;
+  }
+
+  .gallery-section .section-title h2 {
+    font-size: 30px;
+  }
+
+  .gallery-card img {
+    height: 240px;
+  }
+
+}
+
+/* =========================================================
+   PAGE CONTACT - DESIGN MODERNE
+   ========================================================= */
+
+.contact-modern {
+  padding: 80px 0;
+}
+
+
+/* Petit titre */
+
+.contact-small-title {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+
+/* Texte du titre */
+
+.contact-modern .section-title h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-modern .section-title p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARTE INFORMATIONS
+   ========================================================= */
+
+.contact-info-card {
+  height: 100%;
+  padding: 40px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Introduction */
+
+.contact-intro {
+  margin-bottom: 35px;
+}
+
+.contact-intro h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 18px 0 12px;
+}
+
+.contact-intro p {
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+
+/* Badge */
+
+.contact-badge {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1f5f9;
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   INFORMATIONS
+   ========================================================= */
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  background: #f1f5f9;
+
+  font-size: 20px;
+}
+
+.contact-info-item span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+
+.contact-info-item a,
+.contact-info-item strong {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RESEAUX SOCIAUX
+   ========================================================= */
+
+.contact-social {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+
+.contact-social p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-social a {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  margin-right: 8px;
+
+  background: #f1f5f9;
+
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   FORMULAIRE
+   ========================================================= */
+
+.contact-form-card {
+  height: 100%;
+  padding: 40px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Titre formulaire */
+
+.form-heading {
+  margin-bottom: 30px;
+}
+
+.form-heading span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.form-heading h3 {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 8px 0 10px;
+}
+
+.form-heading p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+
+/* Labels */
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+/* Champs */
+
+.input-box {
+  position: relative;
+}
+
+.input-box i {
+  position: absolute;
+
+  left: 17px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 17px;
+
+  opacity: 0.6;
+
+  z-index: 2;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  padding: 14px 18px 14px 48px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.input-box textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.textarea-box i {
+  top: 22px;
+  transform: none;
+}
+
+
+/* Focus */
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #999999;
+
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   BOUTON
+   ========================================================= */
+
+.contact-submit {
+  width: 100%;
+
+  border: none;
+
+  padding: 15px 25px;
+
+  border-radius: 12px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.contact-submit i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover {
+  transform: translateY(-2px);
+}
+
+.contact-submit:hover i {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .contact-modern {
+    padding: 50px 15px;
+  }
+
+  .contact-modern .section-title h2 {
+    font-size: 30px;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 28px 22px;
+    border-radius: 18px;
+  }
+
+  .contact-intro h3 {
+    font-size: 22px;
+  }
+
+  .form-heading h3 {
+    font-size: 23px;
+  }
+
+}
